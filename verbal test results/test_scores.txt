@@ -1,0 +1,296 @@
+Vehicle to harm chi square test 
+Chi-square statistic: 4477.116137066657
+p-value: 0.0
+Degrees of freedom: 3
+
+Contingency Table:
+HUMRAT_PGIA       0    1    2      3
+vehicle_type                        
+Car           30804  109  810  47059
+Motorcycle      780   78  632   5656
+
+
+Age to harm regression
+Optimization terminated successfully.
+         Current function value: 0.081166
+         Iterations 12
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:        severe_or_fatal   No. Observations:                85928
+Model:                          Logit   Df Residuals:                    85906
+Method:                           MLE   Df Model:                           21
+Date:                Thu, 14 Aug 2025   Pseudo R-squ.:                  0.1361
+Time:                        19:27:48   Log-Likelihood:                -6974.5
+converged:                       True   LL-Null:                       -8073.3
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+=================================================================================
+                    coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------
+const            -7.8980      1.150     -6.865      0.000     -10.153      -5.643
+is_motorcycle     2.0473      0.058     35.279      0.000       1.934       2.161
+KVUZA_GIL_10     -0.5814      0.216     -2.692      0.007      -1.005      -0.158
+KVUZA_GIL_11     -0.3064      0.215     -1.425      0.154      -0.728       0.115
+KVUZA_GIL_12     -0.1551      0.219     -0.709      0.479      -0.584       0.274
+KVUZA_GIL_13     -0.3098      0.231     -1.342      0.180      -0.762       0.143
+KVUZA_GIL_14     -0.0905      0.235     -0.385      0.700      -0.551       0.370
+KVUZA_GIL_15      0.4563      0.223      2.051      0.040       0.020       0.892
+KVUZA_GIL_16      0.2403      0.258      0.933      0.351      -0.265       0.745
+KVUZA_GIL_17      0.3534      0.331      1.067      0.286      -0.295       1.002
+KVUZA_GIL_18      0.9022      0.334      2.699      0.007       0.247       1.558
+KVUZA_GIL_2      -0.5176      0.303     -1.709      0.088      -1.111       0.076
+KVUZA_GIL_3      -0.3468      0.290     -1.196      0.232      -0.915       0.222
+KVUZA_GIL_4      -0.0134      0.206     -0.065      0.948      -0.418       0.391
+KVUZA_GIL_5      -0.2116      0.199     -1.063      0.288      -0.602       0.179
+KVUZA_GIL_6      -0.3454      0.202     -1.714      0.087      -0.740       0.050
+KVUZA_GIL_7      -0.7507      0.211     -3.557      0.000      -1.164      -0.337
+KVUZA_GIL_8      -0.5626      0.211     -2.668      0.008      -0.976      -0.149
+KVUZA_GIL_9      -0.7833      0.219     -3.570      0.000      -1.213      -0.353
+KVUZA_GIL_99     -0.6820      1.036     -0.658      0.510      -2.713       1.349
+MIN_1             4.0886      1.135      3.602      0.000       1.864       6.313
+MIN_2             3.8923      1.136      3.426      0.001       1.666       6.119
+=================================================================================
+
+SUMMARY OF ABOVE:
+📊 Logistic Regression Summary
+
+Number of observations: 85928
+Pseudo R-squared: 0.1361
+Log-Likelihood: -6974.5
+Model significance (LLR p-value): 0
+
+---
+
+🏍️ Motorcycle Risk:
+  Coefficient: 2.0473
+  Odds Ratio: 7.75
+  p-value: 1.247e-272
+  ✅ Statistically significant: Motorcyclists are more likely to suffer severe/fatal injuries.
+
+👶🧓 Age Group Effects:
+  KVUZA_GIL_10: Odds Ratio = 0.56, p = 0.007102 ✅
+  KVUZA_GIL_11: Odds Ratio = 0.74, p = 0.1542 ❌
+  KVUZA_GIL_12: Odds Ratio = 0.86, p = 0.4786 ❌
+  KVUZA_GIL_13: Odds Ratio = 0.73, p = 0.1796 ❌
+  KVUZA_GIL_14: Odds Ratio = 0.91, p = 0.7002 ❌
+  KVUZA_GIL_15: Odds Ratio = 1.58, p = 0.04028 ✅
+  KVUZA_GIL_16: Odds Ratio = 1.27, p = 0.351 ❌
+  KVUZA_GIL_17: Odds Ratio = 1.42, p = 0.2858 ❌
+  KVUZA_GIL_18: Odds Ratio = 2.47, p = 0.00696 ✅
+  KVUZA_GIL_2: Odds Ratio = 0.60, p = 0.0875 ❌
+  KVUZA_GIL_3: Odds Ratio = 0.71, p = 0.2318 ❌
+  KVUZA_GIL_4: Odds Ratio = 0.99, p = 0.9481 ❌
+  KVUZA_GIL_5: Odds Ratio = 0.81, p = 0.2878 ❌
+  KVUZA_GIL_6: Odds Ratio = 0.71, p = 0.08651 ❌
+  KVUZA_GIL_7: Odds Ratio = 0.47, p = 0.0003744 ✅
+  KVUZA_GIL_8: Odds Ratio = 0.57, p = 0.007628 ✅
+  KVUZA_GIL_9: Odds Ratio = 0.46, p = 0.0003566 ✅
+  KVUZA_GIL_99: Odds Ratio = 0.51, p = 0.5104 ❌
+
+---
+
+🚻 Gender Effects:
+  MIN_1: Odds Ratio = 59.65, p = 0.0003156 ✅
+  MIN_2: Odds Ratio = 49.02, p = 0.0006127 ✅
+
+Population Group vs crashes
+🧪 Chi-Square Test Results (Combined Crashes):
+Total Chi-square: 260.64, p-value: 0.0000
+
+📊 Group 2 Risk Analysis:
+Group 2 Crash Ratio (Observed/Expected): 1.10×
+👉 Group 2 is statistically more involved in crashes — about 1.10× the expected rate.
+
+FATAL CRASHES AND POPULATION GROUP:
+🧪 Chi-Square Test Results (Fatal Crashes):
+Total Chi-square: 10.74, p-value: 0.0010
+
+📊 Group 2 Fatal Crash Risk Analysis:
+Group 2 Fatal Crash Ratio (Observed/Expected): 1.44×
+👉 Group 2 is statistically more involved in fatal crashes — about 1.44× the expected rate.
+
+severity and rates of accidents by moto group
+Type  Code  Accident Rate  Mean Severity  Severity Variance  \
+0  Up to 50cc     8          0.004          2.401              1.514   
+1    51–125cc     9          0.019          2.248              0.977   
+2   126–400cc    10          0.021          2.313              1.109   
+3      401cc+    19          0.016          2.675              2.584   
+
+   Young Driver %  
+0           0.700  
+1           0.938  
+2           0.930  
+3           0.924
+
+
+TOTALS IL 
+🔢 Total Crashes: 51906
+☠️ Fatal Crashes: 361
+📊 Percentage of Fatal Crashes: 0.70%
+🏍️ Motorcycle-Involved Crashes: 7146
+📊 Percentage of Motorcycle Crashes: 13.77%
+☠️ Fatal Motorcycle Crashes: 78
+📊 Percentage of Fatal Motorcycle Crashes: 0.15%
+
+
+🇮🇱 IL motorcycle serious+fatal (person-level) counts, 2023
+  Fatal:   78
+  Serious: 632
+  Total (Serious+Fatal): 710
+
+
+🇱 IL Poisson GLM: injuries_per_crash ~ self_crash (robust SE)
+IRR (Self vs Multi) = 0.852  95% CI [0.842, 0.863],  p=0.0000
+Mann–Whitney U: U=3629640, p=0.0000
+
+🇮🇱 IL: Share of SELF (single-vehicle) crashes
+Motorcycle-only: 51.31%  (n_self=1,680/3,274)
+Car-only:        6.71%  (n_self=2,566/38,216)
+Two-proportion z-test (Moto-only vs Car-only): z=80.805, p=0.0000
+  Moto-only 95% CI: [49.60%, 53.02%]
+  Car-only  95% CI: [6.47%, 6.97%]
+
+IL vs NY — Share of SELF among motorcycle-involved crashes
+IL: 25.13%  (n_self=1,680/6,685), 95% CI [24.11%, 26.18%]
+NY: 9.77%  (n_self=566/5,792), 95% CI [9.03%, 10.56%]
+Two-proportion z-test: z=22.270, p=0.0000
+
+
+
+
+Fatal Crashes: 361
+Fatal Crash Percentage: 0.70%
+Motorcycle Crashes: 7146
+Motorcycle Crash Percentage: 13.77%
+Fatal Motorcycle Crashes: 78
+Fatal Motorcycle Crash Percentage: 0.15%
+
+
+🗽 NYC Motorcycle Crash Summary
+🔢 Total Crashes: 96853
+☠️ Fatal Crashes (any fatality): 272
+📊 % of Crashes that were Fatal: 0.28%
+🏍️ Motorcycle-Involved Crashes: 5976
+📊 % of Crashes involving Motorcycles: 6.17%
+☠️ Motorcycle Crashes with Fatalities: 76
+📊 % of Crashes that were Fatal Motorcycle Crashes: 0.08%
+💀 Total People Killed in Motorcycle Crashes: 137 (33.01% of all fatalities)
+🚑 Total People Injured in Motorcycle Crashes: 8672 (9.41% of all injuries)
+
+
+NY MOTO VS CAR SEVERITY
+Motorcycle mean severity: 1.85
+Car mean severity: 1.03
+T-statistic: 38.28, p-value: 0.0000
+
+
+🗽 NYC Crash Summary (Motorcycles vs. Cars)
+-----------------------------------------
+Total Crashes (All Types): 96853
+
+🏍️ Motorcycle-Involved Crashes
+Crashes: 5976
+Total Fatalities: 76
+Total Injuries: 5163
+Total Fatalities & Injuries: 5239
+
+🚗 Car-Involved Crashes
+Crashes: 89631
+Total Fatalities: 202
+Total Injuries: 48951
+Total Fatalities & Injuries: 49153
+
+📈 Overall Crash Metrics
+Total Fatalities (All Crashes): 287
+Total Injuries (All Crashes): 54412
+
+
+IL VS NY crash rates chi square:
+               Fatal Crashes    Non-Fatal Crashes
+Israel          361              51545
+New York        269              96337
+
+--- Chi-Squared Test Results ---
+Chi-squared Statistic: 138.0345
+P-value: 0.0000000000
+Degrees of Freedom: 1
+Expected Frequencies Table:
+[[  220.18947964 51685.81052036]
+ [  409.81052036 96196.18947964]]
+
+--- Interpretation ---
+Significance Level (alpha): 0.05
+The p-value (0.0000000000) is less than 0.05.
+Conclusion: The difference in fatal crash rates is statistically significant.
+
+
+--- Chi-Squared Test for Motorcycle Crash Proportions ---
+Motorcycle Crash Contingency Table:
+               Fatal Crashes    Non-Fatal Crashes
+Israel          78              7068
+New York        76              5889
+
+--- Chi-Squared Test Results ---
+Chi-squared Statistic: 0.7830
+P-value: 0.3762279334
+Degrees of Freedom: 1
+Expected Frequencies Table:
+[[  83.94 7062.06]
+ [  70.06 5894.94]]
+
+--- Interpretation ---
+Significance Level (alpha): 0.05
+The p-value (0.3762279334) is greater than or equal to 0.05.
+Conclusion: The difference in motorcycle fatal crash rates is not statistically significant.
+
+
+--- Z-Test for Fatal Crash Rates per 100,000 Motorcycles ---
+Israel's Motorcycle Fatal Crash Rate: 48.75 per 100,000 motorcycles
+New York's Motorcycle Fatal Crash Rate: 21.71 per 100,000 motorcycles
+
+--- Z-Test Results ---
+Z-statistic: 5.1555
+P-value: 0.0000002529
+
+--- Interpretation ---
+Significance Level (alpha): 0.05
+The p-value (0.0000002529) is less than 0.05.
+Conclusion: The difference in motorcycle fatal crash rates per 100,000 motorcycles is statistically significant.
+
+
+--- Fatal Motorcycle Crashes per Motorcycle ---
+Israel's ratio: 0.000487 (fatal crashes per motorcycle)
+New York's ratio: 0.000217 (fatal crashes per motorcycle)
+
+A fatal motorcycle crash was 2.25 times more likely in Israel than in New York, based on these ratios.
+
+
+=== Poisson Rate Comparison: Serious+Fatal motorcycle casualties (persons) ===
+Exposure (IL, NY): 160,000, 350,000
+Counts   (IL, NY): 710, 724
+Rates per 100,000 (IL, NY): 443.75, 206.86
+Rate Ratio (IL/NY): 2.145  (95% CI: 1.934–2.379)
+z = 14.450,  p-value = 0
+
+
+Conclusion: The rate of serious+fatal motorcycle casualties is statistically different between IL and NY (p=0).
+Specifically, IL is higher by a factor of 2.15 (1.93–2.38 95% CI).
+
+
+
+[Self vs Multi] × [Fatal vs Nonfatal]
+[[  12  554]
+ [  44 5182]]
+Chi-square=8.714, df=1, p=0.0032 | Fisher p=0.0099
+Odds ratio (Self vs Multi) = 2.551  95% CI [1.339, 4.859]
+
+[Self vs Multi] × [Any-injury vs None]
+[[ 472   94]
+ [2864 2362]]
+Chi-square=170.910, df=1, p=0.0000 | Fisher p=0.0000
+Odds ratio (Self vs Multi) = 4.141  95% CI [3.297, 5.202]
+
+Poisson GLM: injuries_per_crash ~ self_crash (robust SE)
+IRR (Self vs Multi) = 1.474  95% CI [1.398, 1.555],  p=0.0000
+Mann–Whitney U for injuries per crash: U=1887157, p=0.0000
+
+
